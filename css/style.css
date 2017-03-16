@@ -108,6 +108,13 @@ li {
     box-shadow: 3px 6px 22px -9px rgba(0, 0, 0, 0.75);
 }
 
+.shadow_new {
+	-webkit-box-shadow: 0px 6px 12px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 6px 12px -6px rgba(0,0,0,0.75);
+box-shadow: 0px 6px 12px -6px rgba(0,0,0,0.75);
+padding-bottom: 1%;
+}
+
 
 /*End of Natis CSS*/
 
