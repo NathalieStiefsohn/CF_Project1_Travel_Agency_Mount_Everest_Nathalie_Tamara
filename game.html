@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Promo Game</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- jquery and bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- webfont -->
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- header -->
+        <div class="row">
+            <div class="col-xs-12">
+                <!-- <a class="navbar-brand" href="index.html"> -->
+                <img class="img-responsive pull-left" id="logo" alt="Brand" src="pictures/logo.jpg">
+                <h1 id="companyname" class="brandfont">Mount Everest</h1>
+                <!-- </a> -->
+            </div>
+            <!-- <div class="col-xs-10" id="companyname">
+                <h1>Mount Everest</h1>
+            </div> -->
+        </div>
+        <div class="row">
+            <div id="navbar" class="col-md-12 hidden-sm hidden-xs margin-top">
+                <ul class="nav nav-tabs">
+                    <li role="presentation"><a href="index.html">Home</a></li>
+                    <li role="presentation"><a href="offers.html">Offers</a></li>
+                    <li role="presentation"><a href="booking.html">Booking</a></li>
+                    <li role="presentation" class="active"><a href="game.html">Promo-Game</a></li>
+                    <li role="presentation"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="dropdown col-xs-1 col-xs-offset-10 visible-xs" id="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="glyphicon glyphicon-align-justify"></i>
+                    <!-- <span class="caret"></span> -->
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel">
+                    <li role="presentation"><a href="index.html">Home</a></li>
+                    <li role="presentation"><a href="offers.html">Offers</a></li>
+                    <li role="presentation"><a href="booking.html">Booking</a></li>
+                    <li role="presentation"><a href="game.html">Promo-Game</a></li>
+                    <li role="presentation"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end header -->
+        <!-- main part -->
+        <div class="row">
+            <div class="col-sm-2 visible-sm ">
+                <ul class="nav nav-stacked">
+                    <li role="presentation"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="offers.html">Offers</a></li>
+                    <li role="presentation"><a href="booking.html">Booking</a></li>
+                    <li role="presentation"><a href="game.html">Promo-Game</a></li>
+                    <li role="presentation"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-10 col-md-12 margin-top">
+                <h3 class="brandfont">How many capitals do you know?</h3>
+
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner game-carousel shadow margin-top">
+                        <div class="item active">
+                            <img src="pictures/rom.jpg" alt="...">
+                            <div class="carousel-caption">
+                                <h2 class="brandfont shadow">Get the chance to get a discount on your next journey with Mount Everest!</h2>
+                                <h2 class="text-info brandfont shadow">Prove that you are a real travel-lover!</h2>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="question_image" src="http://placehold.it/1200x315" alt="...">
+                            <div class="carousel-caption">
+                                <h1 class="question shadow"></h1>
+                                <input class="input-lg shadow" type="answer" name="answer1" placeholder="enter capital here" id="answer1">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="question_image" src="http://placehold.it/1200x315" alt="...">
+                            <div class="carousel-caption">
+                                <h1 class="question shadow"></h1>
+                                <input class="input-lg shadow" type="answer" name="answer2" placeholder="enter capital here" id="answer2">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="question_image" src="http://placehold.it/1200x315" alt="...">
+                            <div class="carousel-caption">
+                                <h1 class="question shadow"></h1>
+                                <input class="input-lg shadow" type="answer" name="answer3" placeholder="enter capital here" id="answer3">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="question_image" src="http://placehold.it/1200x315" alt="...">
+                            <div class="carousel-caption">
+                                <h1 class="question shadow"></h1>
+                                <input class="input-lg shadow" type="answer" name="answer4" placeholder="enter capital here" id="answer4">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="question_image" src="http://placehold.it/1200x315" alt="...">
+                            <div class="carousel-caption">
+                                <h1 class="question shadow"></h1>
+                                <input class="input-lg shadow" type="answer" name="answer5" placeholder="enter capital here" id="answer5">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="pictures/rom.jpg" alt="...">
+                            <div class="carousel-caption">
+                                <h2 class="brandfont shadow" id="discount_code"></h2>
+                                <h2 class="text-info brandfont shadow">Are you ready to see your result?</h2>
+                                <button id="game_result" type="button" class="btn btn-success">get result</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+                <!-- Carousel -->
+
+            </div>
+
+        </div>
+        <!-- end main part -->
+        <!-- footer -->
+        <div class=" row panel-footer margin-top">
+            <div class="col-xs-12 text-center">&copy; Tamara and Nati - All rights reserved</div>
+        </div>
+        <!-- end footer -->
+    </div>
+    <!-- link to script -->
+    <script src="js/game.js"></script>
+</body>
+
+</html>

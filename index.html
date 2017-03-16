@@ -12,11 +12,237 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- webfont -->
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
 </head>
 
 <body>
+    <div class="container">
+        <!-- header -->
+        <div class="row">
+            <div class="col-xs-12">
+                <!-- <a class="navbar-brand" href="index.html"> -->
+                <img class="img-responsive pull-left" id="logo" alt="Brand" src="pictures/logo.jpg">
+                <h1 id="companyname">Mount Everest</h1>
+                <!-- </a> -->
+            </div>
+            <!-- <div class="col-xs-10" id="companyname">
+                <h1>Mount Everest</h1>
+            </div> -->
+        </div>
+        <div class="row">
+            <div id="navbar" class="col-md-12 hidden-sm hidden-xs margin-top">
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active"><a href="index.html">Home</a></li>
+                    <li role="presentation"><a href="offers.html">Offers</a></li>
+                    <li role="presentation"><a href="booking.html">Booking</a></li>
+                    <li role="presentation"><a href="game.html">Promo-Game</a></li>
+                    <li role="presentation"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="dropdown col-xs-1 col-xs-offset-10 visible-xs" id="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="glyphicon glyphicon-align-justify"></i>
+                    <!-- <span class="caret"></span> -->
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel">
+                    <li role="presentation"><a href="index.html">Home</a></li>
+                    <li role="presentation"><a href="offers.html">Offers</a></li>
+                    <li role="presentation"><a href="booking.html">Booking</a></li>
+                    <li role="presentation"><a href="game.html">Promo-Game</a></li>
+                    <li role="presentation"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end header -->
+        <!-- main part -->
+        <div class="row">
+            <div class="col-sm-2 visible-sm ">
+                <ul class="nav nav-stacked">
+                    <li role="presentation" class="active"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="offers.html">Offers</a></li>
+                    <li role="presentation"><a href="booking.html">Booking</a></li>
+                    <li role="presentation"><a href="game.html">Promo-Game</a></li>
+                    <li role="presentation"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+           
+            <div class="col-xs-12 col-sm-10 col-md-12 margin-top">
 
-<!-- link to script -->
+            <div id="carousel-example-generic" class="carousel slide shadow margin-top" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="pictures/nepal.jpg" alt="Nepal">
+                        <div class="carousel-caption">
+                            <h1 class="shadow brandfont">Nepal</h1>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="pictures/peru.jpg" alt="Peru">
+                        <div class="carousel-caption">
+                            <h1 class="shadow brandfont">Peru</h1>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="pictures/lhasa.jpg" alt="Lhasa">
+                        <div class="carousel-caption">
+                            <h1 class="shadow brandfont">Lhasa</h1>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="pictures/andalusien.jpg" alt="Andalusien">
+                        <div class="carousel-caption">
+                            <h1 class="shadow brandfont">Andalusien</h1>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="pictures/mongolei.jpg" alt="Mongolei">
+                        <div class="carousel-caption">
+                            <h1 class="shadow brandfont">Mongolei</h1>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="pictures/island.jpg" alt="Island">
+                        <div class="carousel-caption">
+                            <h1 class="shadow brandfont">Island</h1>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+            <!-- Carousel -->
+
+             <!-- begin best offers -->
+                <div class="row">
+                    <div class="col-xs-12 best_offers">
+                        <h2 class="shadow">Best offers</h2></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4 offer margin-top">
+                        <div class="inner_offer">
+                            <div class="destination"></div>
+                            <div class="picture"></div>
+                            <div class="description"></div>
+                            <h3><a href="booking.html"><button class="price btn btn-success">
+                                        </button></a></h3>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4 offer margin-top">
+                        <div class="inner_offer">
+                            <div class="destination"></div>
+                            <div class="picture"></div>
+                            <div class="description"></div>
+                            <h3><a href="booking.html"><button class="price btn btn-success">
+                                        </button></a></h3>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4 offer margin-top">
+                        <div class="inner_offer">
+                            <div class="destination"></div>
+                            <div class="picture"></div>
+                            <div class="description"></div>
+                            <h3><a href="booking.html"><button class="price btn btn-success">
+                                        </button></a></h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- end best offers -->
+                <div class="row margin-top">
+                    <div class="col-xs-12 recommends margin-top">
+                        <h2 class="shadow">Recommendations</h2></div>
+                </div>
+                <div class="row recommends margin-top">
+                    <div class="col-xs-12">
+                        <div class="row recommends1">
+                            <div class="col-xs-2">
+                                <div class="image"></div>
+                            </div>
+                            <div class="col-xs-7">
+                                <blockquote>
+                                    <div class="text"></div>
+                                </blockquote>
+                            </div>
+                            <div class="col-xs-3 col-md-2 stars">
+                                <div class="glyphicon glyphicon-star"></div>
+                                <div class="glyphicon glyphicon-star"></div>
+                                <div class="glyphicon glyphicon-star"></div>
+                                <div class="glyphicon glyphicon-star"></div>
+                                <div class="glyphicon glyphicon-star"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row recommends margin-top">
+                    <div class="col-xs-12">
+                        <div class="row recommends1">
+                            <div class="col-xs-2">
+                                <div class="image"></div>
+                            </div>
+                            <div class="col-xs-7">
+                                <blockquote>
+                                    <div class="text"></div>
+                                </blockquote>
+                            </div>
+                            <div class="col-xs-3 col-md-2 stars">
+                                <div class="glyphicon glyphicon-star"></div>
+                                <div class="glyphicon glyphicon-star"></div>
+                                <div class="glyphicon glyphicon-star"></div>
+                                <div class="glyphicon glyphicon-star"></div>
+                                <div class="glyphicon glyphicon-star-empty"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row recommends margin-top">
+                    <div class="col-xs-12">
+                        <div class="row recommends1">
+                            <div class="col-xs-2">
+                                <div class="image"></div>
+                            </div>
+                            <div class="col-xs-7">
+                                <blockquote>
+                                    <div class="text"></div>
+                                </blockquote>
+                            </div>
+                            <div class="col-xs-3 col-md-2 stars">
+                                <div class="glyphicon glyphicon-star"></div>
+                                <div class="glyphicon glyphicon-star"></div>
+                                <div class="glyphicon glyphicon-star"></div>
+                                <div class="glyphicon glyphicon-star"></div>
+                                <div class="glyphicon glyphicon-star"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+            </div>
+        </div>
+        <!-- end main part -->
+        </div>
+        <!-- footer -->
+        <div class="row panel-footer margin-top">
+            <div class="col-xs-12 text-center">&copy; Tamara and Nati - All rights reserved</div>
+        </div>
+        <!-- end footer -->
+    </div>
+    <!-- link to script -->
     <script src="js/index.js"></script>
 </body>
 

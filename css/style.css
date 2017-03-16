@@ -1,0 +1,227 @@
+/*Natis CSS*/
+
+body * {
+    /*border: 1px solid;*/
+}
+
+li {
+	font-size: 1.3em;
+	font-family: 'Shadows Into Light Two', cursive;
+}
+
+@media (max-width: 450px) {
+    .description {
+        height: 245px;
+        /*background-color: blue;*/
+    }
+}
+
+
+@media (min-width: 451px) and (max-width: 607px) {
+    .description {
+        height: 180px;
+        /*background-color: red;*/
+    }
+}
+
+@media (min-width: 608px) and (max-width: 767px) {
+    .description {
+        height: 130px;
+        /*background-color: green;*/
+    }
+}
+
+
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .description {
+        height: 280px;
+        /*background-color: black;*/
+    }
+}
+
+
+@media (min-width: 1201px) {
+    .description {
+        height: 210px;
+        /*background-color: yellow;*/
+    }
+}
+
+#logo {
+    height: 70px;
+}
+
+.margin-top {
+    margin-top: 2%;
+}
+
+.brandfont,
+#companyname {
+    font-family: 'Shadows Into Light Two', cursive;
+}
+
+#main {
+    padding: 2%;
+}
+
+#result_departure,
+#result_nights,
+#result_people,
+#result_destination,
+#error_congratulation {
+    color: red;
+}
+
+#world {
+    font-style: italic;
+}
+
+.game-carousel h1,
+.game-carousel input,
+.game-carousel h2 {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.question {
+    color: black;
+}
+
+.game {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    top: 50%;
+    bottom: 50%;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+.shadow {
+    /*-webkit-box-shadow: 9px 9px 5px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 9px 5px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 9px 5px -7px rgba(0, 0, 0, 0.75);*/
+    -webkit-box-shadow: 3px 6px 22px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 6px 22px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 6px 22px -9px rgba(0, 0, 0, 0.75);
+}
+
+
+/*End of Natis CSS*/
+
+
+/*Tamaras CSS*/
+
+
+/*contact page*/
+
+
+/*#contact_email_form_address {
+    -webkit-box-shadow: 9px 9px 5px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 9px 5px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 9px 5px -8px rgba(0, 0, 0, 0.75);
+    padding-top: 3%;
+}*/
+
+
+/*
+	#contact_email_form {
+	    padding: 30px;
+	}
+*/
+
+#contact_form {
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: box-shadow: 9px 9px 5px -8px rgba(0, 0, 0, 0.75);
+}
+
+#contact_name,
+#contact_email,
+#contact_message,
+#contact_form {
+    max-width: 100%;
+    width: 100%;
+}
+
+#contact_message {
+    height: 300px;
+}
+
+#map {
+    padding: 10px;
+    max-width: 100%;
+}
+
+
+/*end contact page*/
+
+
+/*offer page*/
+
+.inner_offer {
+    background-color: #f5f5f5;
+    /*-webkit-box-shadow: 9px 9px 5px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 9px 5px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 9px 5px -8px rgba(0, 0, 0, 0.75);*/
+    -webkit-box-shadow: 3px 6px 22px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 6px 22px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 6px 22px -9px rgba(0, 0, 0, 0.75);
+    text-align: justify;
+    color: #616161;
+    padding: 10px;
+}
+
+.inner_offer h3 {
+    padding-bottom: 0px;
+    /*background-color:red;*/
+    align-items: bottom;
+}
+
+img {
+    max-width: 100%;
+}
+
+.destination,
+.picture,
+.description,
+.price {
+    padding: 5px;
+}
+
+.destination {
+    font-size: 200%;
+    font-weight: bold;
+}
+
+
+/*end offers tamara*/
+
+
+/*begin index tamara*/
+
+.best_offers,
+.recommends {
+    text-align: center;
+}
+
+.recommends1 {
+    background-color: white;
+    -webkit-box-shadow: 3px 6px 22px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 6px 22px -9px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 6px 22px -9px rgba(0, 0, 0, 0.75);
+    text-align: justify;
+    color: #616161;
+}
+
+.stars,
+.text {
+    padding-top: 5%;
+    /*padding-right: 10%;*/
+    text-align: right;
+}
+
+
+/*end index tamara*/

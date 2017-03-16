@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Booking Page</title>
+    <!-- style sheet -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- jquery and bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- webfont -->
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- header -->
+        <div class="row">
+            <div class="col-xs-12">
+                <!-- <a class="navbar-brand" href="index.html"> -->
+                <img class="img-responsive pull-left" id="logo" alt="Brand" src="pictures/logo.jpg">
+                <h1 id="companyname" class="brandfont">Mount Everest</h1>
+                <!-- </a> -->
+            </div>
+            <!-- <div class="col-xs-10" id="companyname">
+                <h1>Mount Everest</h1>
+            </div> -->
+        </div>
+        <div class="row">
+            <div id="navbar" class="col-md-12 hidden-sm hidden-xs margin-top">
+                <ul class="nav nav-tabs">
+                    <li role="presentation"><a href="index.html">Home</a></li>
+                    <li role="presentation"><a href="offers.html">Offers</a></li>
+                    <li role="presentation" class="active"><a href="booking.html">Booking</a></li>
+                    <li role="presentation"><a href="game.html">Promo-Game</a></li>
+                    <li role="presentation"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="dropdown col-xs-1 col-xs-offset-10 visible-xs" id="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <i class="glyphicon glyphicon-align-justify"></i>
+                    <!-- <span class="caret"></span> -->
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dLabel">
+                    <li role="presentation"><a href="index.html">Home</a></li>
+                    <li role="presentation"><a href="offers.html">Offers</a></li>
+                    <li role="presentation"><a href="booking.html">Booking</a></li>
+                    <li role="presentation"><a href="game.html">Promo-Game</a></li>
+                    <li role="presentation"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end header -->
+        <!-- main part -->
+        <div class="row">
+            <div class="col-sm-2 visible-sm ">
+                <ul class="nav nav-stacked">
+                    <li role="presentation"><a href="#">Home</a></li>
+                    <li role="presentation"><a href="offers.html">Offers</a></li>
+                    <li role="presentation"><a href="booking.html">Booking</a></li>
+                    <li role="presentation"><a href="game.html">Promo-Game</a></li>
+                    <li role="presentation"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-10 col-md-12 margin-top">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h3 class="brandfont">Please enter the following input fields:</h3>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <!-- first name -->
+                                <p>
+                                    <br>First Name:</p>
+                                <div class="input-group" id="div_firstname">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input id="firstname" type="text" class="form-control" placeholder="Max" aria-describedby="basic-addon1">
+                                </div>
+                                <!-- family name -->
+                                <p>
+                                    <br>Family Name:</p>
+                                <div class="input-group" id="div_familyname">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input id="familyname" type="text" class="form-control" placeholder="Mustermann" aria-describedby="basic-addon1">
+                                </div>
+                                <!-- IBAN -->
+                                <p>
+                                    <br>IBAN:</p>
+                                <div class="input-group" id="div_IBAN">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-euro"></i></span>
+                                    <input id="IBAN" type="text" class="form-control" placeholder="AT523100000100627000" aria-describedby="basic-addon1">
+                                </div>
+                                <!-- BIC -->
+                                <p>
+                                    <br>BIC:</p>
+                                <div class="input-group" id="div_BIC">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-euro"></i></span>
+                                    <input id="BIC" type="text" class="form-control" placeholder="RZBAATWW" aria-describedby="basic-addon1">
+                                </div>
+                                <!-- discount code -->
+                                <p>
+                                    <br>Enter your discount code:</p>
+                                <div class="input-group" id="div_discountcode">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-star"></i></span>
+                                    <input id="discount" type="text" class="form-control" placeholder="Discount Code" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <!-- destination -->
+                                <p>
+                                    <br>Destination:</p>
+                                <div class="input-group" id="div_destination">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-plane"></i></span>
+                                    <input id="destination" list="cityname" type="text" name="destination" class="form-control" placeholder="choose from dropdown" aria-describedby="basic-addon1">
+                                    <datalist id="cityname">
+                                    </datalist>
+                                </div>
+                                <!-- departure -->
+                                <p>
+                                    <br>Departure Date:</p>
+                                <div class="input-group" id="div_departure">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-plane"></i></span>
+                                    <input id="departure" type="text" class="form-control" placeholder="dd/mm/yyyy" aria-describedby="basic-addon1">
+                                </div>
+                                <!-- nights -->
+                                <p>
+                                    <br>Number of nights:</p>
+                                <div class="input-group" id="div_nights">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-tent"></i></span>
+                                    <input id="nights" type="text" class="form-control" placeholder="14" aria-describedby="basic-addon1">
+                                </div>
+                                <!-- people -->
+                                <p>
+                                    <br>Number of travelers:</p>
+                                <div class="input-group" id="div_people">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input id="people" type="text" class="form-control" placeholder="2" aria-describedby="basic-addon1">
+                                </div>
+                                <!-- submit button -->
+                                <p>
+                                    <br>
+                                    <br>
+                                </p>
+                                <button id="delete_cookies" type="button" class="btn btn-info pull-left">clear storage</button>
+                                <button id="submitbutton" type="button" class="btn btn-success pull-right" id="submitbutton">check price</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6" id="results">
+                            <h3 class="brandfont" id="world"></h3>
+                            <div id="congratulation"></div>
+                            <div id="error_congratulation"></div>
+                            <div id="result_destination"></div>
+                            <div id="result_departure"></div>
+                            <div id="result_nights"></div>
+                            <div id="result_people"></div>
+                            <div id="result_success"></div>
+                            <div id="result_price"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end main part -->
+        <!-- footer -->
+        <div class=" row panel-footer margin-top">
+            <div class="col-xs-12 text-center">&copy; Tamara and Nati - All rights reserved</div>
+        </div>
+        <!-- end footer -->
+    </div>
+    <!-- link to script -->
+    <script src="js/booking.js"></script>
+</body>
+
+</html>
