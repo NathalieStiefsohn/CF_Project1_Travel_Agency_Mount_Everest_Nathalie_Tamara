@@ -1,19 +1,21 @@
 // array for destinations
 var offers = [
-    ["Nepal", "../images_offer/nepal2.jpg", "Menschen wie Götter wurden obdachlos, als Nepals unruhige Erde im April 2015 erbebte. Doch Stein für Stein bauen die Nepalesen ihre Häuser wieder auf und rekonstruieren die Heiligtümer in mühevoller Kleinarbeit, getragen von der Kraft ihres Glaubens. Mit einem Besuch im kleinen Himalayastaat zeigen wir den Menschen unsere Solidarität. Grandiose landschaftliche Höhepunkte hat das Land wie eh und je im Überfluss zu bieten, genauso wie eine jahrhundertealte Kultur. Kunstvolle Terrassenfelder, verschwiegene Bergseen und kleine Dörfer erkunden Sie auf dieser WanderStudienreise zu Fuß. Ein Höhepunkt im wahrsten Sinne des Wortes: eine zweitägige Wanderung vor der Kulisse schneebedeckter Achttausender.", 156],
-    ["Tibet", "../images_offer/tibet.jpg", "Tibet ist ein ausgedehntes Hochland in Zentralasien, das oft als Dach der Welt bezeichnet wird. Abgeschieden durch das Himalaya-Gebirge am Südrand hat Tibet eine eigenständige Kultur und schon vor dem 7. Jahrhundert auch eigenständige Staaten (Shangshung, Tubo) herausgebildet, die sich über Teile des Hochlands erstreckten. Mitte des 13. Jahrhunderts geriet Tibet durch die mongolische Herrschaft in den Einzugsbereich des chinesischen Vielvölkerstaates.", 145],
-    ["Shandong", "../images_offer/china_shandong.jpg", "Die chinesische Provinz Shandong liegt an der Ostküste von China, ziemlich genau auf halber Strecke zwischen den Megastädten Peking und Shanghai. Der chinesische Name der Provinz Shandong ist (ausgesprochen Shāndōng), was übesetzt in etwa östlich des Berges bedeutet. Im Falle Shangdongs ist vermutlich der Taishan-Berg gemeint, der in Shandong liegt.", 125],
-    ["Mongolei", "../images_offer/mongolei.jpg", "Die Mongolei, ein dünn besiedelter Binnenstaat im Osten Asiens, grenzt im Norden an Russland und im Süden an China. Wer einen etwas älteren Atlas zu Hause hat, findet für den Nomadenstaat die Bezeichnung „Äußere Mongolei“ – im Unterschied zur „Inneren Mongolei“, die als autonome Region Teil Chinas ist. Bis zur Verfassungsänderung im Juli 1992 bezeichnete sich die Mongolei als Volksrepublik. Heute ist sie stolz darauf eine parlamentarische Republik zu sein, dessen Staatsoberhaupt alle vier Jahre vom Volk gewählt wird.", 165],
-    ["Peru", "../images_offer/peru.jpg", "Peru ist ein Staat im westlichen Südamerika und grenzt im Norden an Ecuador und Kolumbien, im Osten an Brasilien, im Südosten an Bolivien, im Süden an Chile und im Westen an den Pazifik. Hinter der schmalen Küstenregion beginnt die Sierra. Sie besteht aus mehreren Bergzügen der Anden, die von Längstälern unterbrochen werden. Typisch für die gesamte Andenregion sind dazu tief eingeschnittene Täler (Canyons) und Durchbrüche der Gebirgsketten (span. Pongo) durch große Flüsse, an der West- und Ostseite der Kordillere.", 138],
-    ["Mount Everest", "../images_offer/mounteverest.jpg", "Der Mount Everest befindet sich im Mahalangur Himal in der Region Khumbu in Nepal an der Grenze zu China (Autonomes Gebiet Tibet); der westliche und südöstliche seiner drei Gipfelgrate bilden die Grenze. Auf nepalesischer Seite ist er Teil des Sagarmatha-Nationalparks, der zum UNESCO-Welterbe gehört. Wie im Grunde alle markanten Gipfel der Khumbu-Region ist auch der Mount Everest für die Sherpas ein heiliger Berg.", 380],
-    ["Kirkjufell", "..images_offer/kirkjufell.jpg", "Der Berg Kirkjufell (463 m) liegt im Westen von Island. Er befindet sich nahe der Stadt Grundarfjörður Der Berg gehört zum Vulkansystem Lýsuskarð. Zahlreiche geologische Schichten lassen sich an ihm feststellen, die im Allgemeinen denen anderer Berge im Norden von Snæfellsnes entsprechen; so findet man an seinem Fuße Laven des Holozän, darüber abwechselnd Sedimentschichten wie auch Laven aus den Zwischeneiszeiten des Tertiär. Diese Larven sind einige Millionen Jahre alt. Dazwischen findet man auch Sedimentschichten mit Resten von Meereslebewesen wie am Kap Búlandshöfði. Der Gipfel besteht größtenteils aus Hyaloklastiten.", 125],
-    ["Teneriffa", "../images_offer/teneriffa.jpg", "Teneriffa ist eine Vulkaninsel. Sie gehört – wie alle Kanarischen Inseln – topografisch zu Afrika, liegt 288 Kilometer vor der Küste Marokkos und der Westsahara und ist 1.274 Kilometer von der Südküste des spanischen Mutterlandes entfernt. Sie ist mit etwa 1.000.000 Einwohnern, die bevölkerungsreichste Insel Spaniens. Die Hauptstadt ist Santa Cruz de Tenerife.", 98],
-    ["Mallorca", "../images_offer/mallorca.jpg", "Mallorca ist die größte Insel der Balearen-Gruppe, bestehend aus den Gymnesianen und den Pityusen, die eine autonome Gemeinschaft innerhalb des spanischen Staates bildet. Auf Mallorca befindet sich die Hauptstadt der Balearischen Inseln, Palma. Das besondere Licht Mallorcas, die mit Windrädern und Olivenhainen geschmückte Landschaft, das grandiose Hinterland mit verträumten Dörfern sowie die schönsten Sandstrände und Buchten verzaubern jeden Besucher.", 130],
-    ["Fjorde, Norwegen", "../images_offer/fjord.jpg", "Über eintausend Fjorde gibt es in Norwegen. Doch die legendärsten von ihnen – die, die Sie bestimmt schon mal auf Postkarten gesehen haben, wie der Nærøyfjord, der Sognefjord, der Lysefjord und der Geirangerfjord – liegen an der Westküste. Die Fjorde sehen aus wie ruhige blaue Seen. Sie enthalten jedoch Salzwasser – denn sie sind die verlängerten Arme der Meere.", 160],
-    ["Jakobsweg", "../images_offer/jakobsweg.jpg", "Als Jakobsweg (spanisch Camino de Santiago) wird eine Anzahl von Pilgerwegen durch ganz Europa bezeichnet, die alle das angebliche Grab des Apostels Jakobus in Santiago de Compostela in Galicien (Spanien) zum Ziel haben. In erster Linie wird darunter der Camino Francés verstanden, jene hochmittelalterliche Hauptverkehrsachse Nordspaniens, die von den Pyrenäen zum Jakobsgrab führt und die Königsstädte Jaca, Pamplona, Estella, Burgos und León miteinander verbindet. Diese Route, so wie sie heute noch begangen wird, entstand in der ersten Hälfte des 11. Jahrhunderts.", 25],
-    ["Andalusien", "../images_offer/andalusien.png", "Die bedeutendsten Naturräume Andalusiens sind die südliche Abdachung der Sierra Morena, das Becken des Guadalquivir und die Betische Kordillere, zu der die Sierra Nevada gehört. Der Campo de Gibraltar, mit dem Felsen von Gibraltar bildet den südlichsten Teil des europäischen Festlandes. Bei Tarifa, der südlichsten Stadt, liegen Europa und Afrika nur 14 Kilometer voneinander entfernt, getrennt durch die Straße von Gibraltar. Bekannt ist die Region auch durch ihre Musik, den Flamenco. Andalusien war in der Vergangenheit oft umkämpft. Es kam daher zu vielfältigen kulturellen Einflüsse, wie zum Beispiel durch die Araber oder die Römer.", 145]
-];
-// fill dropdown for destinations
+        ["Nepal", "pictures/nepal2.jpg", "Menschen wie Götter wurden obdachlos, als Nepals unruhige Erde im April 2015 erbebte. Doch Stein für Stein bauen die Nepalesen ihre Häuser wieder auf. Mit einem Besuch im kleinen Himalayastaat zeigen wir den Menschen unsere Solidarität. Grandiose landschaftliche Höhepunkte hat das Land wie eh und je im Überfluss zu bieten. Kunstvolle Terrassenfelder, verschwiegene Bergseen und kleine Dörfer erkunden Sie auf dieser WanderStudienreise zu Fuß.", 156],
+        ["Tibet", "pictures/tibet.jpg", "Tibet ist ein ausgedehntes Hochland in Zentralasien, das oft als Dach der Welt bezeichnet wird. Abgeschieden durch das Himalaya-Gebirge am Südrand hat Tibet eine eigenständige Kultur und schon vor dem 7. Jahrhundert haben sich auch eigenständige Staaten herausgebildet, die sich über Teile des Hochlands erstreckten. Mitte des 13. Jahrhunderts geriet Tibet durch die mongolische Herrschaft in den Einzugsbereich des chinesischen Vielvölkerstaates.", 145],
+        ["Mount Everest", "pictures/mounteverest.jpg", "Der Mount Everest befindet sich im Mahalangur Himal in der Region Khumbu in Nepal an der Grenze zu China (Autonomes Gebiet Tibet); der westliche und südöstliche seiner drei Gipfelgrate bilden die Grenze. Auf nepalesischer Seite ist er Teil des Sagarmatha-Nationalparks, der zum UNESCO-Welterbe gehört. Wie im Grunde alle markanten Gipfel der Khumbu-Region ist auch der Mount Everest für die Sherpas ein heiliger Berg. Lust auf ein Risiko?", 380],
+        ["Shandong", "pictures/china_shandong.jpg", "Shandong heißt übersetzt Östlich der Berge. Die Bezeichnung bezieht sich auf das Gebirge Taihang, in dessen Osten die Küstenprovinz liegt. Auch ein anderer Berg ist prägend für die Region: Der Taishan, der Taiberg, der als wichtigster der fünf daoistischen Berge Chinas gilt. Entdecken Sie auf diesen Seiten die Faszination der Provinz Shandong, dem Geburtsort des Konfuzius und natürlichen Highlights mit mehr als 3.000 Küstenkilometern!", 125],
+        ["Mongolei", "pictures/mongolei_horse.jpg", "Die Mongolei, ein dünn besiedelt im Osten Asiens, grenzt im Norden an Russland und im Süden an China. Wer einen etwas älteren Atlas zu Hause hat, findet für den Nomadenstaat die Bezeichnung „Äußere Mongolei“ – im Unterschied zur „Inneren Mongolei“, die als autonome Region Teil Chinas ist. Bis zur Verfassungsänderung im Juli 1992 bezeichnete sich die Mongolei als Volksrepublik. Heute ist sie stolz darauf eine parlamentarische Republik zu sein.", 165],
+        ["Peru", "pictures/peru_lama.jpg", "Peru ist ein Staat im westlichen Südamerika und grenzt im Norden an Ecuador und Kolumbien, im Süden an Chile und im Westen an den Pazifik. Hinter der schmalen Küstenregion beginnt die Sierra. Sie besteht aus mehreren Bergzügen der Anden, die von Längstälern unterbrochen werden. Typisch für die gesamte Andenregion sind dazu tief eingeschnittene Täler und Durchbrüche der Gebirgsketten durch große Flüsse, an der West- und Ostseite der Kordillere.", 138],
+
+        ["Kirkjufell", "pictures/kirkjufell.jpg", "Der Berg Kirkjufell liegt im Westen von Island. Er befindet sich nahe der Stadt Grundarfjörður Der Berg gehört zum Vulkansystem Lýsuskarð. Zahlreiche geologische Schichten lassen sich an ihm feststellen, die im Allgemeinen denen anderer Berge im Norden von Snæfellsnes entsprechen; so findet man an seinem Fuße Larven des Holozän, darüber abwechselnd Sedimentschichten wie auch Larven aus den Zwischeneiszeiten. Der Gipfel besteht aus Hyaloklastiten.", 125],
+        ["Fjorde, Norwegen", "pictures/fjord.jpg", "Seit jeher gehören die Fjorde zu den spektakulärsten geologischen Formationen der Welt. Typisch für die norwegischen Fjorde sind die langen und zugleich sehr schmalen Buchten, die sich tief in die Berge der Küste einschneiden. Ihre Ausläufer reichen weit in das Landesinnere und sind teilweise so tief wie die angrenzenden Klippen hoch sind. Erst an der Küste werden sie seichter und gewinnen eine gewisse Zurückhaltung. Einen Fjord nennt man auch Fjärde", 160],
+        ["Teneriffa", "pictures/teneriffa.jpg", "Teneriffa ist eine Vulkaninsel. Sie gehört – wie alle Kanarischen Inseln – topografisch zu Afrika, liegt 288 Kilometer vor der Küste Marokkos und der Westsahara und ist 1.274 Kilometer von der Südküste des spanischen Mutterlandes entfernt. Sie ist mit etwa 1.000.000 Einwohnern, die bevölkerungsreichste Insel Spaniens. Die Hauptstadt ist Santa Cruz de Tenerife.Teneriffa besitzt wie alle anderen Inseln des Kanarenarchipels ganzjährig milde Temperaturen", 98],
+        ["Mallorca", "pictures/mallorca.jpg", "Mallorca ist die größte Insel der Balearen Gruppe, bestehend aus den Gymnesianen und den Pityusen, die eine autonome Gemeinschaft innerhalb des spanischen Staates bildet. Auf Mallorca befindet sich die Hauptstadt der Balearischen Inseln, Palma. Das besondere Licht Mallorcas, die mit Windrädern und Oliven Hainen geschmückte Landschaft, das grandiose Hinterland mit verträumten Dörfern und die schönsten Sandstrände verzaubern jeden Besucher.", 130],
+
+        ["Jakobsweg", "pictures/jakobsweg.jpg", "Als Jakobsweg (spanisch Camino de Santiago) wird eine Anzahl von Pilgerwegen durch ganz Europa bezeichnet, die alle das angebliche Grab des Apostels Jakobus in Santiago de Compostela in Galicien (Spanien) zum Ziel haben. In erster Linie wird darunter der Camino Francés verstanden, jene hochmittel alterliche Haupt Verkehrsachse Nordspaniens, die von den Pyrenäen zum Jakobsgrab führt und die Königsstädte Jaca, Pamplona und León miteinander verbindet.", 25],
+        ["Andalusien", "pictures/andalusien.png", "Die bedeutendsten Naturräume Andalusiens sind die südliche Abdachung der Sierra Morena, das Becken des Guadalquivir und die Betische Kordillere, zu der die Sierra Nevada gehört. Der Campo de Gibraltar, mit dem Felsen von Gibraltar bildet den südlichsten Teil des europäischen Festlandes. Bei Tarifa, der südlichsten Stadt, liegen Europa und Afrika nur 14 Kilometer voneinander entfernt. Bekannt ist die Region auch durch ihre Musik, den Flamenco.", 145]
+    ]
+    // fill dropdown for destinations
 fill_destination();
 
 function fill_destination() {
@@ -35,19 +37,19 @@ function get_price() {
     // name discount calculation:
     end_price = price_init * user_input.nights * user_input.people
     var name_discount = (0 / 100);
-    if (names.firstname.charAt(0) === "L") {
+    if (names.firstname.charAt(0) === "L" || "l") {
         name_discount = (20 / 100);
     } //end if
-    if (names.firstname.charAt(0) === "C") {
+    if (names.firstname.charAt(0) === "C" || "c") {
         name_discount = (20 / 100);
     } //end if
-    if (names.firstname.charAt(0) === "H") {
+    if (names.firstname.charAt(0) === "H" || "h") {
         name_discount = (20 / 100);
     } //end if
-    if (names.firstname.charAt(0) === "I") {
+    if (names.firstname.charAt(0) === "I" || "i") {
         name_discount = (20 / 100);
     } //end if
-    if (names.firstname.charAt(0) === "G") {
+    if (names.firstname.charAt(0) === "G" || "g") {
         name_discount = (20 / 100);
     } //end if
     console.log(name_discount)
@@ -63,21 +65,21 @@ function get_price() {
     console.log(game_discount)
 
 
-if (game_discount>=0){
-console.log("there is a game discount of "+game_discount)
+    if (game_discount >= 0) {
+        console.log("there is a game discount of " + game_discount)
 
-    discounts = 1 - (name_discount + game_discount)
-    console.log(discounts)
-    discounted_price = Math.round(end_price * discounts)
-    console.log("price function " + user_input.destination + ": " + discounted_price);
+        discounts = 1 - (name_discount + game_discount)
+        console.log(discounts)
+        discounted_price = Math.round(end_price * discounts)
+        console.log("price function " + user_input.destination + ": " + discounted_price);
 
-} else {
-    console.log("there is no game_discount")
-    discounts = 1 - (name_discount)
-    console.log(discounts)
-    discounted_price = Math.round(end_price * discounts)
-    console.log("price function " + user_input.destination + ": " + discounted_price);
-}
+    } else {
+        console.log("there is no game_discount")
+        discounts = 1 - (name_discount)
+        console.log(discounts)
+        discounted_price = Math.round(end_price * discounts)
+        console.log("price function " + user_input.destination + ": " + discounted_price);
+    }
 
 
 
@@ -88,7 +90,6 @@ console.log("there is a game discount of "+game_discount)
 // fill result site
 
 function result() {
-    $("#world").html('"The World Is a Book and Those Who Do Not Travel Read Only One Page."').addClass("text-info").addClass("blockquote-reverse");
     if (names.firstname != "") {
         $("#congratulation").html("<h4>Congratulations, " + names.firstname + "! <br><br> Booking on this page means that you are a very active person, who is interested in advanture and nature. <br><br> You will experience an extraordinary travelling experience, which you will definitely not regret!</h4>").addClass("text-success").addClass("text-justify");
         $("#error_congratulation").html("").removeClass('alert').removeClass("alert-danger")
@@ -142,9 +143,13 @@ function result() {
 
 
     if ((check_departure === "ok" && check_nights === "ok" && check_people === "ok" && check_destination === "ok")) {
-        $("#result_success").html("<h4>Fortunately, we still have free rooms for " + user_input.nights + " nights on your desired departure date.<h4>").addClass("text-success").addClass("text-justify")
-        $("#result_price").html("<h4>The total price for your journey to <b>" + user_input.destination + "</b> amounts to <b>€" + discounted_price + "</b>.<h4> <br> <a target='_blank' href='https://www.paypal.com/signin?country.x=AT'><button class='btn btn-success'>book now</button></a>").addClass("text-success").addClass("text-justify")
+        $("#result_success").html("<h4>Fortunately, we still have free rooms for " + user_input.nights + " nights on your desired departure date.</h4>").addClass("text-success").addClass("text-justify")
+        $("#result_price").html("<h4>The total price for your journey to <b>" + user_input.destination + "</b> amounts to <b>€" + discounted_price + "</b>.</h4>").addClass("text-success").addClass("text-justify")
+        $("#personal_data").addClass('visible').removeClass("hide");
     } else {
+        $("#personal_data").addClass('hide').removeClass("visible");
+        $("#result_success").html("");
+        $("#result_price").html("");
         console.log("fill in all fields")
     }
 
@@ -155,25 +160,26 @@ function result() {
 
 
 
+$("#submitbutton1").click(save_first_input);
 
-// local storage
+function save_first_input() {
 
-$("#submitbutton").click(savevariables);
-
-function savevariables() {
-    var g = $("#destination").val(),
+    g = $("#destination").val(),
         id = $('#cityname').find('option').filter(function() {
             return $.trim($(this).text()) === g;
         }).attr('value');
 
     user_input = {
-        IBAN: document.getElementById("IBAN").value,
         discount: document.getElementById("discount").value,
         destination: id,
         departure: document.getElementById("departure").value,
         nights: document.getElementById("nights").value,
         people: document.getElementById("people").value
     };
+
+
+    console.log("user_input.destination : " + user_input.destination + " var id: " + id + " var g: " + g)
+
     // console.log("after saving variable "+user_input.destination)
     var myJSON, text, obj;
     //Storing data:
@@ -192,7 +198,73 @@ function savevariables() {
     //call result function
     result();
 
-} //end of savevariables function
+    //call print_offers function
+
+    print_offers();
+
+
+} //end of save_first_input function
+
+$("#submitbutton2").on("click", payment)
+
+function payment() {
+
+payment_info = {
+        IBAN: document.getElementById("IBAN").value,
+        BIC: document.getElementById("BIC").value,
+        email: document.getElementById("email").value,
+        
+    };
+
+
+
+    var check_BIC, check_IBAN, check_email
+
+    if (payment_info.IBAN === "") {
+        $("#result_IBAN").html("Please enter your IBAN to proceed to payment.").addClass("alert-danger").addClass("alert")
+        var check_IBAN = "empty"
+        console.log("no iban")
+    } else {
+        $("#result_IBAN").html("").removeClass("alert-danger").removeClass("alert")
+        var check_IBAN = "ok"
+        console.log("iban ok")
+    }
+
+    if (payment_info.BIC === "") {
+        $("#result_BIC").html("Please enter your BIC to proceed to payment.").addClass("alert-danger").addClass("alert")
+        var check_BIC = "empty"
+        console.log("no bic")
+    } else {
+        $("#result_BIC").html("").removeClass("alert-danger").removeClass("alert")
+        var check_BIC = "ok"
+        console.log("bic ok")
+
+    }
+
+    if (payment_info.email === "") {
+        $("#result_email").html("Please enter your email address to proceed to payment.").addClass("alert-danger").addClass("alert")
+        var check_email = "empty"
+        console.log("no email")
+    } else {
+        $("#result_email").html("").removeClass("alert-danger").removeClass("alert")
+        var check_email = "ok"
+        console.log("email ok")
+
+    }
+
+
+    if ((check_BIC === "ok" && check_IBAN === "ok" && check_email === "ok")) {
+        $("#anchor_submit_payment").attr("href", "https://www.paypal.com/signin?country.x=AT")
+        console.log("attribute href added to payment button")
+    } else {
+
+        console.log("fill in all payment data")
+    }
+
+} //end function payment
+
+
+
 
 // deleting cookies
 $("#delete_cookies").click(delete_cookies);
@@ -204,25 +276,36 @@ function delete_cookies() {
     myJSON = JSON.stringify(obj);
     localStorage.setItem("testJSON", myJSON);
 
-text2 = localStorage.getItem("testJSON2");
+    text2 = localStorage.getItem("testJSON2");
     promo_code = JSON.parse(text2);
     promo_code = "";
     myJSON2 = JSON.stringify(promo_code);
     localStorage.setItem("testJSON2", myJSON2);
+
+    var myJSON3
+    text3 = localStorage.getItem("testJSON3");
+    obj3 = JSON.parse(text3);
+    obj3 = "";
+    myJSON3 = JSON.stringify(obj3);
+    localStorage.setItem("testJSON3", myJSON3);
 
     $("#firstname").val("");
     $("#familyname").val("");
     $("#discount").val("");
     $("#IBAN").val("");
     $("#BIC").val("");
+    $("#email").val("");
     $("#nights").val("");
     $("#people").val("");
     $("#departure").val("");
     $("#destination").val("");
 }
 
+var obj3;
 
 //Retrieving data from local storage:
+localstorage();
+
 function localstorage() {
     var test2
     var promo_code
@@ -232,6 +315,73 @@ function localstorage() {
     obj = JSON.parse(text);
     $("#firstname").val(obj.firstname);
     $("#familyname").val(obj.familyname);
+
+
     $("#discount").val(promo_code[0]);
+
+    var myJSON3, text3;
+    text3 = localStorage.getItem("testJSON3");
+    obj3 = JSON.parse(text3);
+
+
+
+    if (obj3 >= 0) {
+        show_destination = offers[obj3][0]
+            // calledonsole.log("var show_destination: "+show_destination)
+        $("#destination").val(show_destination);
+    }
+
 }
-localstorage();
+
+print_offers();
+
+function print_offers() {
+    g = $("#destination").val(),
+        id = $('#cityname').find('option').filter(function() {
+            return $.trim($(this).text()) === g;
+        }).attr('value');
+
+    user_input = {
+        IBAN: document.getElementById("IBAN").value,
+        discount: document.getElementById("discount").value,
+        destination: id,
+        departure: document.getElementById("departure").value,
+        nights: document.getElementById("nights").value,
+        people: document.getElementById("people").value
+    };
+
+    if (user_input.destination == null) {
+        $("#world").html('');
+        $(".destination").html("");
+        $(".picture").html("");
+        $(".description2").html("");
+        $(".price").html("");
+        $(".details").eq(0).html("");
+        $(".details").eq(1).html("");
+    } else {
+        // console.log("function printOffers called")
+        console.log("user_input.destination: " + user_input.destination)
+            // console.log("offers.length: "+offers.length)
+        for (i = 0; i < offers.length; i++) {
+            if (user_input.destination === offers[i][0]) {
+                x = offers[i][0];
+                // console.log("var x: "+x)
+                var y
+                y = i
+                    // console.log("var y: "+y)
+            } // end if
+
+        } //end for
+        // console.log("index from destination position in array: " + y)
+
+        $("#world").html('"The World Is a Book and Those Who Do Not Travel Read Only One Page."').addClass("text-info").addClass("blockquote");
+        $(".destination").html(offers[y][0]).addClass("brandfont");
+        $(".picture").html("<img class='img-responsive center-block shadow' src= '" + offers[y][1] + "' alt='a picture'>");
+        $(".description2").html(offers[y][2]).addClass("text-justify");
+        $(".price").html("€" + offers[y][3] + " per person and night");
+        $(".details").eq(0).html("<strong>The price includes:</strong><br><ul><li>Accommondation</li><li>Guide</li><li>Entries to sights</li></ul")
+        $(".details").eq(1).html("<strong>The price does not include:</strong><br><ul><li>Flights</li><li>Food and Beverages</li><li>Tips</li></ul")
+    } //end if
+
+}
+// end of function

@@ -10,11 +10,12 @@ var offers = [
     ["Fjorde, Norwegen", "pictures/fjord.jpg", "Seit jeher gehören die Fjorde zu den spektakulärsten geologischen Formationen der Welt. Typisch für die norwegischen Fjorde sind die langen und zugleich sehr schmalen Buchten, die sich tief in die Berge der Küste einschneiden. Ihre Ausläufer reichen weit in das Landesinnere und sind teilweise so tief wie die angrenzenden Klippen hoch sind. Erst an der Küste werden sie seichter und gewinnen eine gewisse Zurückhaltung. Einen Fjord nennt man auch Fjärde", 160],
     ["Teneriffa", "pictures/teneriffa.jpg", "Teneriffa ist eine Vulkaninsel. Sie gehört – wie alle Kanarischen Inseln – topografisch zu Afrika, liegt 288 Kilometer vor der Küste Marokkos und der Westsahara und ist 1.274 Kilometer von der Südküste des spanischen Mutterlandes entfernt. Sie ist mit etwa 1.000.000 Einwohnern, die bevölkerungsreichste Insel Spaniens. Die Hauptstadt ist Santa Cruz de Tenerife.Teneriffa besitzt wie alle anderen Inseln des Kanarenarchipels ganzjährig milde Temperaturen", 98],
     ["Mallorca", "pictures/mallorca.jpg", "Mallorca ist die größte Insel der Balearen Gruppe, bestehend aus den Gymnesianen und den Pityusen, die eine autonome Gemeinschaft innerhalb des spanischen Staates bildet. Auf Mallorca befindet sich die Hauptstadt der Balearischen Inseln, Palma. Das besondere Licht Mallorcas, die mit Windrädern und Oliven Hainen geschmückte Landschaft, das grandiose Hinterland mit verträumten Dörfern und die schönsten Sandstrände verzaubern jeden Besucher.", 130],
-    
+
     ["Jakobsweg", "pictures/jakobsweg.jpg", "Als Jakobsweg (spanisch Camino de Santiago) wird eine Anzahl von Pilgerwegen durch ganz Europa bezeichnet, die alle das angebliche Grab des Apostels Jakobus in Santiago de Compostela in Galicien (Spanien) zum Ziel haben. In erster Linie wird darunter der Camino Francés verstanden, jene hochmittel alterliche Haupt Verkehrsachse Nordspaniens, die von den Pyrenäen zum Jakobsgrab führt und die Königsstädte Jaca, Pamplona und León miteinander verbindet.", 25],
     ["Andalusien", "pictures/andalusien.png", "Die bedeutendsten Naturräume Andalusiens sind die südliche Abdachung der Sierra Morena, das Becken des Guadalquivir und die Betische Kordillere, zu der die Sierra Nevada gehört. Der Campo de Gibraltar, mit dem Felsen von Gibraltar bildet den südlichsten Teil des europäischen Festlandes. Bei Tarifa, der südlichsten Stadt, liegen Europa und Afrika nur 14 Kilometer voneinander entfernt. Bekannt ist die Region auch durch ihre Musik, den Flamenco.", 145]
 ]
 
+printOffers();
 
 function printOffers() {
     // begin of for loop
@@ -28,12 +29,26 @@ function printOffers() {
         description.textContent = offers[i][2];
         var price = $(".price")[i];
         price.innerHTML = "€" + offers[i][3] + " per person and night";
-
-
     }
     // end of loop
-
 }
 // end of function
+// 
+choice();
 
-printOffers();
+function choice() {
+    for (i = 0; i < offers.length; i++) {
+        var button = $(".price")[i];
+        $(button).on("click", function() {
+            var myJSON3, text3, obj3;
+            //Storing data:
+            chosen_offer = $(".price").index(this)
+            myJSON3 = JSON.stringify(chosen_offer);
+            localStorage.setItem("testJSON3", myJSON3);
+            text3 = localStorage.getItem("testJSON3");
+            obj3 = JSON.parse(text3);
+            console.log(obj3);
+            console.log("test")
+        });
+    }
+}

@@ -4,7 +4,7 @@ body * {
     /*border: 1px solid;*/
 }
 
-li {
+.nav li {
 	font-size: 1.3em;
 	font-family: 'Shadows Into Light Two', cursive;
 }
@@ -107,7 +107,13 @@ li {
     -moz-box-shadow: 3px 6px 22px -9px rgba(0, 0, 0, 0.75);
     box-shadow: 3px 6px 22px -9px rgba(0, 0, 0, 0.75);
 }
+#bigger {
+	font-size: 1.3em;
+}
 
+#verybig {
+	font-size: 2em;
+}
 .shadow_new {
 	-webkit-box-shadow: 0px 6px 12px -6px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 6px 12px -6px rgba(0,0,0,0.75);

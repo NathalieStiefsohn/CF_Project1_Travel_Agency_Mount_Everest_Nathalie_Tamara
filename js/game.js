@@ -82,15 +82,6 @@ function random_questions() {
 }
 
 
-
-// var check = []
-
-// $(document).on("load", function (){
-// 	for (i=0;i<check.length;i++){
-// 	check.pop()
-// 	}
-// })
-
 // get game result
 
 $("#game_result").on("click", game_result)

@@ -24,6 +24,9 @@
                 <!-- <a class="navbar-brand" href="index.html"> -->
                 <img class="img-responsive pull-left" id="logo" alt="Brand" src="pictures/logo.jpg">
                 <h1 id="companyname" class="brandfont">Mount Everest</h1>
+                <a href="game.html">
+                    <p class="brandfont pull-right" id="verybig">Get up to 10% off your next booking with our new promo game!</p>
+                </a>
                 <!-- </a> -->
             </div>
             <!-- <div class="col-xs-10" id="companyname">
@@ -68,19 +71,44 @@
             </div>
             <div class="col-xs-12 col-sm-10 col-md-12 margin-top">
                 <div class="row">
-                    <div class="col-xs-12 col-md-6">
+                    <div class="col-xs-12">
                         <div class="row">
                             <div class="col-xs-12">
                                 <h3 class="brandfont">Please enter the following input fields:</h3>
                             </div>
                             <div class="col-xs-12 col-md-6">
-                                <!-- first name -->
+                                <!--first name -->
                                 <p>
                                     <br>First Name:</p>
                                 <div class="input-group" id="div_firstname">
                                     <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
                                     <input id="firstname" type="text" class="form-control" placeholder="Max" aria-describedby="basic-addon1">
                                 </div>
+                                <!-- destination -->
+                                <p>
+                                    <br>Destination:</p>
+                                <div class="input-group" id="div_destination">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-plane"></i></span>
+                                    <input id="destination" list="cityname" type="text" name="destination" class="form-control" placeholder="choose from dropdown" aria-describedby="basic-addon1">
+                                    <datalist id="cityname">
+                                    </datalist>
+                                </div>
+                                <!-- people -->
+                                <p>
+                                    <br>Number of travelers:</p>
+                                <div class="input-group" id="div_people">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input id="people" class="form-control" type="number" name="passengers" min="1" max="10" step="1" placeholder="No. of people">
+                                </div>
+                                <!-- discount code -->
+                                <p>
+                                    <br>Enter your discount code:</p>
+                                <div class="input-group" id="div_discountcode">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-star"></i></span>
+                                    <input id="discount" type="text" class="form-control" placeholder="Discount Code" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
                                 <!-- family name -->
                                 <p>
                                     <br>Family Name:</p>
@@ -88,6 +116,76 @@
                                     <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
                                     <input id="familyname" type="text" class="form-control" placeholder="Mustermann" aria-describedby="basic-addon1">
                                 </div>
+                                <!-- departure -->
+                                <p>
+                                    <br>Departure Date:</p>
+                                <div class="input-group" id="div_departure">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-plane"></i></span>
+                                    <input id="departure" class="form-control" type="date" name="date">
+                                </div>
+                                <!-- nights -->
+                                <p>
+                                    <br>Number of nights:</p>
+                                <div class="input-group" id="div_nights">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-tent"></i></span>
+                                    <input id="nights" class="form-control" type="number" name="passengers" min="1" max="28" step="1" placeholder="No. Nights">
+                                </div>
+                                <!-- submit button -->
+                                <p>
+                                    <br>
+                                    <br>
+                                </p>
+                                <button id="delete_cookies" type="button" class="btn btn-info pull-left">clear storage</button>
+                                <button id="submitbutton1" type="button" class="btn btn-success pull-right" id="submitbutton">check price</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 margin-top" id="results">
+                        <div id="congratulation"></div>
+                        <div id="error_congratulation"></div>
+                        <div id="result_destination"></div>
+                        <div id="result_departure"></div>
+                        <div id="result_nights"></div>
+                        <div id="result_people"></div>
+                        <div id="result_success"></div>
+                        <div id="result_price"></div>
+                    </div>
+                    <div class="col-xs-12 margin-top">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h3 class="brandfont" id="world"></h3>
+                                <div class="col-xs-12 visible-xs visible-sm destination"></div>
+                            </div>
+                            <div class="col-xs-6 col-md-8">
+                                <div class="row">
+                                    <div class="col-xs-12 visible-md visible-lg destination"></div>
+                                    <div class="col-xs-12 description2"></div>
+                                    <div class="col-xs-12 margin-top">
+                                        <div class="margin-top">
+                                            <div class="price label label-info margin-top" id="bigger"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 margin-top">
+                                        <div class="row margin-top">
+                                            <div class="col-xs-6 col-md-12">
+                                                <div class="details"></div>
+                                            </div>
+                                            <div class="col-xs-6 col-md-12">
+                                                <div class="details"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-xs-6 picture pull-right"></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 hide" id="personal_data">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h3 class="brandfont">Please enter the following input fields:</h3>
+                            </div>
+                            <div class="col-xs-12 col-md-6">
                                 <!-- IBAN -->
                                 <p>
                                     <br>IBAN:</p>
@@ -102,65 +200,33 @@
                                     <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-euro"></i></span>
                                     <input id="BIC" type="text" class="form-control" placeholder="RZBAATWW" aria-describedby="basic-addon1">
                                 </div>
-                                <!-- discount code -->
-                                <p>
-                                    <br>Enter your discount code:</p>
-                                <div class="input-group" id="div_discountcode">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-star"></i></span>
-                                    <input id="discount" type="text" class="form-control" placeholder="Discount Code" aria-describedby="basic-addon1">
-                                </div>
                             </div>
                             <div class="col-xs-12 col-md-6">
-                                <!-- destination -->
+                                <!-- email -->
                                 <p>
-                                    <br>Destination:</p>
-                                <div class="input-group" id="div_destination">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-plane"></i></span>
-                                    <input id="destination" list="cityname" type="text" name="destination" class="form-control" placeholder="choose from dropdown" aria-describedby="basic-addon1">
-                                    <datalist id="cityname">
-                                    </datalist>
+                                    <br>e-Mail:</p>
+                                <div class="input-group" id="div_email">
+                                    <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-envelope"></i></span>
+                                    <input id="email" type="text" class="form-control" placeholder="max.mustermann@gmail.com" aria-describedby="basic-addon1">
                                 </div>
-                                <!-- departure -->
-                                <p>
-                                    <br>Departure Date:</p>
-                                <div class="input-group" id="div_departure">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-plane"></i></span>
-                                    <input id="departure" type="text" class="form-control" placeholder="dd/mm/yyyy" aria-describedby="basic-addon1">
-                                </div>
-                                <!-- nights -->
-                                <p>
-                                    <br>Number of nights:</p>
-                                <div class="input-group" id="div_nights">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-tent"></i></span>
-                                    <input id="nights" type="text" class="form-control" placeholder="14" aria-describedby="basic-addon1">
-                                </div>
-                                <!-- people -->
-                                <p>
-                                    <br>Number of travelers:</p>
-                                <div class="input-group" id="div_people">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="glyphicon glyphicon-user"></i></span>
-                                    <input id="people" type="text" class="form-control" placeholder="2" aria-describedby="basic-addon1">
-                                </div>
+                            </div>
+                            <div class="col-xs-6">
                                 <!-- submit button -->
                                 <p>
                                     <br>
                                     <br>
                                 </p>
-                                <button id="delete_cookies" type="button" class="btn btn-info pull-left">clear storage</button>
-                                <button id="submitbutton" type="button" class="btn btn-success pull-right" id="submitbutton">check price</button>
+                                
+                                <a target='_blank' id="anchor_submit_payment">
+                                    <button id="submitbutton2" type="button" class="btn btn-success" id="submitbutton">proceed to payment</button>
+                                </a>
+                            </div>
+                            <div class="col-xs-12 margin-top">
+                                <div id="result_BIC"></div>
+                                <div id="result_IBAN"></div>
+                                <div id="result_email"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xs-12 col-md-6" id="results">
-                            <h3 class="brandfont" id="world"></h3>
-                            <div id="congratulation"></div>
-                            <div id="error_congratulation"></div>
-                            <div id="result_destination"></div>
-                            <div id="result_departure"></div>
-                            <div id="result_nights"></div>
-                            <div id="result_people"></div>
-                            <div id="result_success"></div>
-                            <div id="result_price"></div>
                     </div>
                 </div>
             </div>
